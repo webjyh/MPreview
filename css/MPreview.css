@@ -1,0 +1,105 @@
+/* Media-box */
+.MPreview-box { position: relative; border: 1px solid #DDD; background: #FFF; height: 100%; }
+.MPreview-mediaPlay { position: absolute; top: 0; left: 0; right: 0; bottom: 31px; overflow: hidden; }
+
+/* Media-box common */
+.MPreview-box img { vertical-align: top; margin: 0; padding: 0; border: 0; }
+
+.MPreview-box .hidden { display:none; }
+.MPreview-box .invisible { visibility:hidden; }
+
+.MPreview-box .cle { display:block; height:0; overflow:hidden; clear:both; }
+.MPreview-box .clefix:after,
+.MPreview-ppt .MPreview-mediaView:after { content:'\20'; display:block; height:0; clear:both; }
+.MPreview-box .clefix,
+.MPreview-ppt .MPreview-mediaView { *zoom:1; }
+
+/* Media-box .tool-bar */
+.MPreview-box .tool-bar { position: absolute; width: 70px; height: 28px; padding-top: 10px; top: 0px; right: 0px; z-index: 28; -webkit-user-select: none; -moz-user-select: none; }
+.MPreview-box .MPreview-mediaPlay { width: 100%; overflow: hidden; -webkit-user-select: none; -moz-user-select: none; background:url(../images/loading.gif) no-repeat center center; }
+.MPreview-box .MPreview-mediaView { width: 100%; text-align: center; }
+.MPreview-box .MPreview-mediaView img { max-width: 100%; }
+.MPreview-box .tool-bar ul { padding-right: 20px; }
+.MPreview-box .tool-bar ul li { float: left; display: inline; margin: 0px 10px; }
+.MPreview-box .tool-bar ul li a { display: block; width: 26px; height: 26px; border: 1px solid transparent; border-radius: 3px; }
+.MPreview-box .tool-bar ul li a:hover { border-color: #DDD; }
+.MPreview-box .tool-bar ul li a span { position: relative; top:3px; left: 3px; display: block; overflow: hidden; width: 20px; height: 20px; text-indent: -9999px; font: 0 a; }
+
+/* Media-box => icon */
+.MPreview-box .MPreview-zoomBig span,
+.MPreview-box .MPreview-zoomSmall span,
+.MPreview-box .MPreview-viewOne span,
+.MPreview-box .MPreview-viewMulti span,
+.MPreview-box .MPreview-fullScreen span,
+.MPreview-box .MPreview-exit span,
+.MPreview-box .MPreview-pagePrev span,
+.MPreview-box .MPreview-pageNext span,
+.MPreview-box .MPreview-arrowTop span,
+.MPreview-box .MPreview-arrowBottom span { background: url(../images/media_icon.png) no-repeat -9999px -9999px; }
+
+.MPreview-box .MPreview-zoomBig span { background-position: 0px -78px; }
+.MPreview-box .MPreview-zoomSmall span { background-position: -23px -78px; }
+.MPreview-box .MPreview-viewOne span { background-position: 1px -23px; }
+.MPreview-box .MPreview-viewMulti span { background-position: -22px -23px; }
+.MPreview-box .MPreview-fullScreen span { background-position: -82px -27px; }
+.MPreview-box .MPreview-exit span { background-position: -55px -27px; }
+.MPreview-box .MPreview-pagePrev span { background-position: -82px -55px; }
+.MPreview-box .MPreview-pageNext span { background-position: -82px -80px; }
+.MPreview-box .MPreview-zoomBig.current span { background-position: 0px -50px; }
+.MPreview-box .MPreview-zoomSmall.current span { background-position: -23px -50px; }
+.MPreview-box .MPreview-viewOne.current span { background-position: 1px 2px; }
+.MPreview-box .MPreview-viewMulti.current span { background-position: -22px 3px; }
+.MPreview-box .MPreview-fullScreen:hover span,
+.MPreview-box .MPreview-fullScreen.current span { background-position: -82px 0px; }
+.MPreview-box .MPreview-exit:hover span,
+.MPreview-box .MPreview-exit.current span { background-position: -55px 0px; }
+.MPreview-box .MPreview-pagePrev.current span { background-position: -55px -55px; }
+.MPreview-box .MPreview-pageNext.current span { background-position: -55px	 -80px; }
+.MPreview-box .MPreview-arrowTop span { background-position: -122px -5px; }
+.MPreview-box .MPreview-arrowBottom span { background-position: -122px -48px; }
+
+/* Media-box => scroll-bar */
+.MPreview-box .MPreview-scrollBar { display: block; position: absolute; top: 0px; right: 0px; bottom: 31px; width: 15px; border-left: 1px solid #DDD; z-index: 30; }
+.MPreview-box .MPreview-scrollBar .MPreview-scrollBtn { z-index: 40; cursor: default; border-radius: 5px; position: absolute; top: 5px; left: -6px; width:9px; min-height: 20px; background: #DDD; border: 1px solid #ccc; }
+.MPreview-box .MPreview-scrollBar .MPreview-scrollBtn:active,
+.MPreview-box .MPreview-scrollBar .MPreview-scrollBtn.current { box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); } 
+
+/* Media-box => page-bar */
+.MPreview-box .page-bar { position: absolute; z-index: 25; left: 0px; bottom: 0px; width: 100%; height: 30px; border-top: 1px solid #DDD; z-index: 25; -webkit-user-select: none; -moz-user-select: none; }
+.MPreview-box .page-bar .page-bar-inner { padding-top: 2px; margin: 0px auto; width: 160px; }
+.MPreview-box .page-bar .page-bar-inner a { float: left; display: inline; margin: 0px 10px; overflow: hidden; border: 1px solid #FFF; width: 16px; height: 14px; padding: 5px; border-radius: 3px; }
+.MPreview-box .page-bar .page-bar-inner a:hover { border: 1px solid #DDD; }
+.MPreview-box .page-bar .page-bar-inner a span { display: block; overflow: hidden; width: 16px; height: 14px; text-indent: -9999px; font: 0 a; }
+.MPreview-box .page-bar .MPreview-pageInput { float: left; background:#FFF; border: 1px solid #DDD; color: #666; border: 0; text-align: center; margin: 0px; width: 30px; height: 16px; line-height:16px; padding: 0px; padding-top: 4px; outline: 0;  -webkit-user-select: none; -moz-user-select: none; }
+.MPreview-box .page-bar .MPreview-pageCount { float: left; width: 30px; height: 16px; text-align:center; padding-top: 3px; color: #666; font-size: 12px; }
+.MPreview-box .page-bar .MPreview-pageCount em { font-style: normal; color: #666; }
+
+/* Media-box => arrow */
+.MPreview-box .MPreview-arrowUp,
+.MPreview-box .MPreview-arrowDown { position: absolute; width: 100%; height: 30px; top: 10px; left: 0px; z-index: 25; *background:url(about:blank) no-repeat; }
+.MPreview-box .MPreview-arrowDown { top: auto; bottom: 40px; }
+.MPreview-box .MPreview-arrowUp div,
+.MPreview-box .MPreview-arrowDown div { display: none; margin: 0px auto; width: 61px; height: 30px; overflow: hidden; font: 0 a; text-indent: -9999px; width: 61px; height: 100%; margin: 0px auto; overflow: hidden; }
+.MPreview-box .MPreview-arrowUp span,
+.MPreview-box .MPreview-arrowDown span { cursor: pointer; display: block; width: 100%; height: 100%; }
+.MPreview-box .MPreview-arrowUp a:hover,
+.MPreview-box .MPreview-arrowDown a:hover, { opacity: 0.8; filter:alpha(opacity=80); }
+.MPreview-box .media-dual .view { float: left; width: 50%; }
+
+/* Media-PPT */
+.MPreview-ppt .MPreview-mediaPlay { bottom: 51px; }
+.MPreview-ppt .MPreview-mediaView { width: auto; height: 100%; text-align: left; -webkit-transition: all .5s; transition: all .5s; }
+.MPreview-ppt .MPreview-mediaView div { float: left; text-align: center; width: 100%; height: 100%; background: #FFF url(../images/loading.gif) no-repeat center center; }
+.MPreview-ppt .MPreview-mediaView img { max-width: 100%; max-height: 100%; }
+.MPreview-ppt .tool-bar { width: 50px; }
+.MPreview-ppt .MPreview-scrollBar { top: auto; bottom: 25px; width: 100%; height: 15px; border-left: 0 none; border-top: 1px solid #DDD; }
+.MPreview-ppt .MPreview-scrollBar .MPreview-scrollBtn { top: -6px; left: 5px; height: 9px; width: auto; min-width: 20px; min-height: 9px; }
+.MPreview-ppt .MPreview-arrowUp,
+.MPreview-ppt .MPreview-arrowDown { width: 30px; height: 100%; top: 0px; left: 10px; }
+.MPreview-ppt .MPreview-arrowDown { top: 0px; bottom: auto; left: auto; right: 10px; }
+.MPreview-ppt .MPreview-arrowUp div,
+.MPreview-ppt .MPreview-arrowDown div { position: absolute; top: 50%; margin-top: -30px; width: 30px; height: 61px; }
+.MPreview-ppt .MPreview-arrowUp span,
+.MPreview-ppt .MPreview-arrowDown span { width: 30px; height: 61px; }
+.MPreview-ppt .MPreview-arrowUp span { background-position: -206px 0px; }
+.MPreview-ppt .MPreview-arrowDown span { background-position: -249px 0px; }

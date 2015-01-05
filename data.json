@@ -1,0 +1,23 @@
+{
+    "code": 1,
+    "imgs": [
+        "./upload/1.png",
+        "./upload/2.png",
+        "./upload/3.png",
+        "./upload/4.png",
+        "./upload/5.png",
+        "./upload/1.png?ver=1.0.0",
+        "./upload/2.png?ver=1.0.0",
+        "./upload/3.png?ver=1.0.0",
+        "./upload/4.png?ver=1.0.0",
+        "./upload/5.png?ver=1.0.0",
+        "./upload/1.png?ver=2.0.0",
+        "./upload/2.png?ver=2.0.0",
+        "./upload/3.png?ver=2.0.0",
+        "./upload/4.png?ver=2.0.0",
+        "./upload/5.png?ver=2.0.0",
+        "./upload/1.png?ver=3.0.0",
+        "./upload/2.png?ver=3.0.0",
+        "./upload/3.png?ver=3.0.0",
+    ]
+}

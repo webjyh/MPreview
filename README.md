@@ -77,7 +77,7 @@ var data = ['upload/1.jpg','upload/2.jpg','upload/3.jpg'];
 $('#doc').MPreview({ data: data });
 ```
 
-### MPreview.js (PPT 版) 参数说明
+### MPreviewPPT.js (PPT 版) 参数说明
 ```javascript
 $('#ppt').MPreviewPPT({ 
     url: 'api.php?action=doc&callback=?',   //url中包含callback则表示跨越请求，具体可参考$.getJSON();

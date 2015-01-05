@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<title>MPreview PPT格式预览</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/MPreview.css">
+</head>
+<body>
+    <h1 style="font-size: 16px;"><a href="index.html" style="color: #666;">Word 版</a>　　<a href="PPT.html" style="color: #666;">PPT 版</a></h1>
+    <div class="wrapper">
+        <div class="ppt" id="ppt"></div>
+    </div>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/MPreviewPPT.js"></script>
+    <script type="text/javascript">$('#ppt').MPreviewPPT({ url: 'api.php?action=ppt&callback=?' });</script>
+</body>
+</html>
