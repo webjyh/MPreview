@@ -1,6 +1,7 @@
 # MPreview.js
 
 Word，PPT 文档预览组件（图片预览组件）
+
 移动端请移步 [MPreview.mobile](https://github.com/webjyh/MPreview.mobile)
 
 ## Demo参考
